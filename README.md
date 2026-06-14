@@ -158,7 +158,7 @@ http://localhost:8501
 <h3 align="center">🏠 Home Page</h3>
 
 <p align="center">
-  <img src="home.png" alt="Home Page" width="900">
+  <img src="home.jpeg" alt="Home Page" width="900">
 </p>
 
 <p align="center">
@@ -170,7 +170,7 @@ Application landing page showing project overview and folder selection.
 <h3 align="center">📂 Folder Selection</h3>
 
 <p align="center">
-  <img src="folder_selection.png" alt="Folder Selection" width="900">
+  <img src="folder_selection.jpeg" alt="Folder Selection" width="900">
 </p>
 
 <p align="center">
@@ -182,7 +182,7 @@ User selects a directory to analyze.
 <h3 align="center">📊 Disk Analysis Results</h3>
 
 <p align="center">
-  <img src="analysis_results.png" alt="Analysis Results" width="900">
+  <img src="analysis_results.jpeg" alt="Analysis Results" width="900">
 </p>
 
 <p align="center">
@@ -194,7 +194,7 @@ Display of scanned files, storage statistics, and categorized files.
 <h3 align="center">🤖 AI Cleanup Recommendations</h3>
 
 <p align="center">
-  <img src="recommendations.png" alt="Cleanup Recommendations" width="900">
+  <img src="recommendations.jpeg" alt="Cleanup Recommendations" width="900">
 </p>
 
 <p align="center">
@@ -316,10 +316,10 @@ AI_Disk_Cleanup_Recommender/
 ├── app.py
 ├── README.md
 ├── requirements.txt
-├── home.png
-├── folder_selection.png
-├── analysis_results.png
-├── recommendations.png
+├── home.jpeg
+├── folder_selection.jpeg
+├── analysis_results.jpeg
+├── recommendations.jpeg
 └── assets/
 ```
 
@@ -329,7 +329,12 @@ AI_Disk_Cleanup_Recommender/
 
 The AI Disk Cleanup Recommender successfully analyzes disk usage, identifies unnecessary files, and provides intelligent cleanup recommendations through an interactive Streamlit dashboard. The project demonstrates practical application of Python, file system analysis, and AI-inspired recommendation techniques for storage optimization.
 
+--
+
+
+
+GitHub Repository:
+https://github.com/harsithagali/AI_Disk_Cleanup_Recommender
+
 ---
-
-
 
