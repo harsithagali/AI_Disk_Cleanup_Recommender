@@ -1,60 +1,119 @@
-# AI_Disk_Cleanup_Recommender
-AI-powered disk cleanup recommendation system that analyzes files and folders, identifies unnecessary storage usage, and suggests safe cleanup actions through an interactive Streamlit dashboard.
 # AI Disk Cleanup Recommender
 
-## Overview
+## 1. Project Title and Problem Statement
 
-AI Disk Cleanup Recommender is a Python-based application that helps users analyze disk usage and identify files that may be consuming unnecessary storage space. The application scans directories, categorizes files, and provides intelligent recommendations for cleanup through an interactive Streamlit dashboard.
+### Project Title
 
-The goal of this project is to assist users in maintaining a clean and efficient system by highlighting temporary files, log files, large files, and other storage-heavy content that can be safely reviewed for deletion.
+**AI Disk Cleanup Recommender**
 
----
+### Problem Statement
 
-## Features
+Modern computer systems accumulate temporary files, log files, cache files, and other unnecessary data over time. These files consume valuable disk space and may impact system performance. Manually identifying such files is time-consuming and error-prone.
 
-* Scan selected folders and directories
-* Detect large files consuming excessive disk space
-* Identify temporary files
-* Detect log files
-* Generate cleanup recommendations
-* Interactive Streamlit-based dashboard
-* Easy-to-understand storage analysis
-* User-friendly interface
+The AI Disk Cleanup Recommender analyzes files and folders, identifies potentially unnecessary files based on predefined rules, and provides intelligent recommendations to help users optimize storage usage efficiently.
 
 ---
 
-## Technologies Used
+## 2. Team Members
 
-* Python
-* Streamlit
-* Pandas
-* NumPy
-* OS Module
-* Pathlib
+| Name                      | Role                     |
+| ------------------------- | ------------------------ |
+| B. S. N. V. Satyanarayana | Project Lead / Developer |
+| Team Member 2             | Developer                |
+| Team Member 3             | Tester                   |
+| Team Member 4             | Documentation            |
+
+*(Update the names as applicable.)*
 
 ---
 
-## Project Structure
+## 3. Features Implemented
+
+* Directory scanning and analysis
+* Detection of temporary files
+* Detection of log files
+* Large file identification
+* Storage usage calculation
+* AI-based cleanup recommendations
+* Interactive Streamlit dashboard
+* File categorization
+* Summary statistics and insights
+
+---
+
+## 4. Architecture Overview
 
 ```text
-AI_Disk_Cleanup_Recommender/
-│
-├── app.py
-├── requirements.txt
-├── README.md
-├── data/
-├── logs/
-└── assets/
+User
+  │
+  ▼
+Streamlit Web Interface
+  │
+  ▼
+File Scanner Module
+  │
+  ├── Temporary File Detection
+  ├── Log File Detection
+  ├── Large File Analysis
+  └── Storage Statistics
+  │
+  ▼
+AI Recommendation Engine
+  │
+  ▼
+Cleanup Suggestions Dashboard
 ```
+
+### Workflow
+
+1. User selects a folder.
+2. System scans all files recursively.
+3. Files are categorized.
+4. AI recommendation engine evaluates cleanup opportunities.
+5. Recommendations are displayed on the dashboard.
 
 ---
 
-## Installation
+## 5. Tools and Technologies Used
 
-### Clone the Repository
+### Programming Language
+
+* Python
+
+### Framework
+
+* Streamlit
+
+### Libraries
+
+* os
+* pathlib
+* pandas
+* numpy
+
+### Development Tools
+
+* Visual Studio Code
+* Git
+* GitHub
+
+### Operating System
+
+* Windows 10 / Windows 11
+
+---
+
+## 6. Setup Instructions
+
+### Clone Repository
 
 ```bash
 git clone https://github.com/your-username/AI_Disk_Cleanup_Recommender.git
+```
+
+### Navigate to Project Directory
+
+```bash
 cd AI_Disk_Cleanup_Recommender
 ```
 
@@ -64,18 +123,12 @@ cd AI_Disk_Cleanup_Recommender
 python -m venv venv
 ```
 
-### Activate Virtual Environment
+### Activate Environment
 
 Windows:
 
 ```bash
 venv\Scripts\activate
-```
-
-Linux/Mac:
-
-```bash
-source venv/bin/activate
 ```
 
 ### Install Dependencies
@@ -86,59 +139,118 @@ pip install -r requirements.txt
 
 ---
 
-## Running the Application
+## 7. Run Instructions
 
-Start the Streamlit application:
+Run the Streamlit application using:
 
 ```bash
 python -m streamlit run app.py
 ```
 
-The application will automatically open in your default browser.
+The application will automatically open in your browser.
+
+Default URL:
+
+```text
+http://localhost:8501
+```
 
 ---
 
-## How It Works
+## 8. Sample Input and Sample Output
 
-1. Select a directory to analyze.
-2. The application scans files and folders.
-3. File sizes and categories are evaluated.
-4. Cleanup recommendations are generated.
-5. Users can review suggested files before taking any action.
+### Sample Input
+
+Folder Selected:
+
+```text
+C:\Users\Demo\Downloads
+```
+
+Files Found:
+
+```text
+temp1.txt
+temp_data.tmp
+log1.txt
+video.mp4
+project.zip
+```
+
+### Sample Output
+
+```text
+Analysis Completed
+
+Total Files: 5
+Temporary Files: 2
+Log Files: 1
+Large Files: 1
+
+Recommendations:
+
+✓ Delete temp1.txt
+✓ Delete temp_data.tmp
+✓ Review log1.txt
+✓ Consider moving video.mp4 to external storage
+```
 
 ---
 
-## Use Cases
+## 9. AI Capability Demonstrated
 
-* Free up disk space
-* Identify unnecessary files
-* Monitor storage consumption
-* Improve system organization
-* Support regular maintenance activities
+The application demonstrates AI-inspired decision-making by:
 
----
+* Identifying files based on file type patterns.
+* Classifying files into categories.
+* Generating cleanup recommendations automatically.
+* Prioritizing files based on storage impact.
+* Providing intelligent suggestions for storage optimization.
 
-## Future Enhancements
+### Example
 
-* Duplicate file detection
-* AI-based cleanup scoring
-* File age analysis
-* Automated cleanup suggestions
-* Export reports to PDF
-* Scheduled scans
+```text
+File: temp_data.tmp
+Reason: Temporary file detected
+Recommendation: Safe to delete
 
----
-
-## Author
-
-**B. S. N. V. Satyanarayana**
-
-Software Developer | Trainer | Author
+File: log1.txt
+Reason: Log file detected
+Recommendation: Review before deletion
+```
 
 ---
 
-## License
+## 10. Assumptions and Limitations
 
-This project is licensed under the MIT License.
+### Assumptions
 
-Feel free to use, modify, and distribute this project for educational and professional purposes.
+* User has permission to access selected folders.
+* File extensions accurately represent file types.
+* Users review recommendations before deleting files.
+
+### Limitations
+
+* Does not automatically delete files.
+* Rule-based recommendations only.
+* Duplicate file detection is not implemented.
+* Does not analyze file content.
+* Performance depends on folder size.
+
+---
+
+## 11. Demo Video Link
+
+Demo Video:
+
+```text
+https://your-demo-video-link-here.com
+```
+
+Replace the above link with your YouTube, Google Drive, or Loom demo video URL.
+
+---
+
+## Project Outcome
+
+The AI Disk Cleanup Recommender successfully analyzes disk usage, identifies unnecessary files, and provides intelligent cleanup recommendations through an easy-to-use Streamlit dashboard. The project demonstrates practical application of Python, file system analysis, and AI-inspired recommendation techniques for system optimization.
