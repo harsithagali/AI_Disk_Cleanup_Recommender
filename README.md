@@ -18,10 +18,10 @@ The AI Disk Cleanup Recommender analyzes files and folders, identifies potential
 
 | Name                      | Role                     |
 | ------------------------- | ------------------------ |
-| B. S. N. V. Satyanarayana | Project Lead / Developer |
-| Team Member 2             | Developer                |
-| Team Member 3             | Tester                   |
-| Team Member 4             | Documentation            |
+| G.Harsitha | Project Lead | Developer                |
+| G.Varshitha               | AI integration           |
+| G.Vyshnavi                | Tester                   |
+| G.Gouri                   | Documentation & Reporting|
 
 ---
 
