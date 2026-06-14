@@ -23,8 +23,6 @@ The AI Disk Cleanup Recommender analyzes files and folders, identifies potential
 | Team Member 3             | Tester                   |
 | Team Member 4             | Documentation            |
 
-*(Update the names as applicable.)*
-
 ---
 
 ## 3. Features Implemented
@@ -108,7 +106,7 @@ Cleanup Suggestions Dashboard
 ### Clone Repository
 
 ```bash
-git clone https://github.com/your-username/AI_Disk_Cleanup_Recommender.git
+git clone https://github.com/harsithagali/AI_Disk_Cleanup_Recommender.git
 ```
 
 ### Navigate to Project Directory
@@ -125,8 +123,6 @@ python -m venv venv
 
 ### Activate Environment
 
-Windows:
-
 ```bash
 venv\Scripts\activate
 ```
@@ -141,7 +137,7 @@ pip install -r requirements.txt
 
 ## 7. Run Instructions
 
-Run the Streamlit application using:
+Run the application using:
 
 ```bash
 python -m streamlit run app.py
@@ -157,7 +153,57 @@ http://localhost:8501
 
 ---
 
-## 8. Sample Input and Sample Output
+## 8. Screenshots
+
+<h3 align="center">🏠 Home Page</h3>
+
+<p align="center">
+  <img src="home.png" alt="Home Page" width="900">
+</p>
+
+<p align="center">
+Application landing page showing project overview and folder selection.
+</p>
+
+---
+
+<h3 align="center">📂 Folder Selection</h3>
+
+<p align="center">
+  <img src="folder_selection.png" alt="Folder Selection" width="900">
+</p>
+
+<p align="center">
+User selects a directory to analyze.
+</p>
+
+---
+
+<h3 align="center">📊 Disk Analysis Results</h3>
+
+<p align="center">
+  <img src="analysis_results.png" alt="Analysis Results" width="900">
+</p>
+
+<p align="center">
+Display of scanned files, storage statistics, and categorized files.
+</p>
+
+---
+
+<h3 align="center">🤖 AI Cleanup Recommendations</h3>
+
+<p align="center">
+  <img src="recommendations.png" alt="Cleanup Recommendations" width="900">
+</p>
+
+<p align="center">
+AI-generated recommendations for temporary files, log files, and large files.
+</p>
+
+---
+
+## 9. Sample Input and Sample Output
 
 ### Sample Input
 
@@ -197,15 +243,15 @@ Recommendations:
 
 ---
 
-## 9. AI Capability Demonstrated
+## 10. AI Capability Demonstrated
 
-The application demonstrates AI-inspired decision-making by:
+The application demonstrates AI-inspired decision-making through:
 
-* Identifying files based on file type patterns.
-* Classifying files into categories.
-* Generating cleanup recommendations automatically.
-* Prioritizing files based on storage impact.
-* Providing intelligent suggestions for storage optimization.
+* File pattern recognition
+* File categorization
+* Automated recommendation generation
+* Storage impact analysis
+* Intelligent cleanup suggestions
 
 ### Example
 
@@ -221,7 +267,7 @@ Recommendation: Review before deletion
 
 ---
 
-## 10. Assumptions and Limitations
+## 11. Assumptions and Limitations
 
 ### Assumptions
 
@@ -232,14 +278,14 @@ Recommendation: Review before deletion
 ### Limitations
 
 * Does not automatically delete files.
-* Rule-based recommendations only.
-* Duplicate file detection is not implemented.
+* Rule-based recommendation engine.
+* Duplicate file detection not implemented.
 * Does not analyze file content.
 * Performance depends on folder size.
 
 ---
 
-## 11. Demo Video Link
+## 12. Demo Video Link
 
 Demo Video:
 
@@ -247,10 +293,43 @@ Demo Video:
 https://your-demo-video-link-here.com
 ```
 
-Replace the above link with your YouTube, Google Drive, or Loom demo video URL.
+Replace the above link with your actual YouTube, Google Drive, or Loom video URL.
 
 ---
 
-## Project Outcome
+## 13. Future Enhancements
 
-The AI Disk Cleanup Recommender successfully analyzes disk usage, identifies unnecessary files, and provides intelligent cleanup recommendations through an easy-to-use Streamlit dashboard. The project demonstrates practical application of Python, file system analysis, and AI-inspired recommendation techniques for system optimization.
+* Duplicate file detection
+* File age analysis
+* Automated cleanup actions
+* PDF report generation
+* Cloud storage analysis
+* Machine Learning-based recommendation engine
+
+---
+
+## 14. Project Structure
+
+```text
+AI_Disk_Cleanup_Recommender/
+│
+├── app.py
+├── README.md
+├── requirements.txt
+├── home.png
+├── folder_selection.png
+├── analysis_results.png
+├── recommendations.png
+└── assets/
+```
+
+---
+
+## 15. Project Outcome
+
+The AI Disk Cleanup Recommender successfully analyzes disk usage, identifies unnecessary files, and provides intelligent cleanup recommendations through an interactive Streamlit dashboard. The project demonstrates practical application of Python, file system analysis, and AI-inspired recommendation techniques for storage optimization.
+
+---
+
+
+
